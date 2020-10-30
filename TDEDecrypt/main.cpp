@@ -11,12 +11,6 @@ const char* const b = "0C3b676fe8d7188Cde022F71632830F36b98b181aD48Fed160006eA59
 
 auto input = "D:\\Steam\\steamapps\\common\\Teardown\\data\\music\\menu.ogg.tde";
 auto output = "D:\\Project\\TD\\test\\menu.ogg";
-//auto input = "D:\\Steam\\steamapps\\common\\Teardown\\data\\snd\\alarm-background.ogg.tde";
-//auto output = "D:\\Project\\TD\\test\\alarm-background.ogg";
-//auto input = "D:\\Steam\\steamapps\\common\\Teardown\\data\\env\\cloudy.dds.tde";
-//auto output = "D:\\Project\\TD\\test\\cloudy.dds";
-//auto input = "D:\\Steam\\steamapps\\common\\Teardown\\data\\gfx\\rect.png.tde";
-//auto output = "D:\\Project\\TD\\test\\rect.png";
 
 char tdEncryptedFileInputStreamReadImpl(FILE* file, size_t* fptr, _BYTE* chunk, unsigned __int64 chunkSize)
 {
