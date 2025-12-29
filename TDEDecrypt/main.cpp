@@ -10,10 +10,13 @@ auto output = "D:\\Project\\TD\\test\\menu.ogg";
 //auto input = "D:\\Steam\\steamapps\\common\\Teardown\\data\\gfx\\foam.png.tde";
 //auto output = "D:\\Project\\TD\\test\\foam.png";
 
-int main()
+int main(int argc, char* argv[])
 {
-	FILE* infile = fopen(input, "rb");
-	FILE* outfile = fopen(output, "wb");
+
+	if(argc < 3) { return 1; }
+	
+	FILE* infile = fopen(argv[1], "rb");
+	FILE* outfile = fopen(argv[2], "wb");
 
 	int dat, i = 0;
 	while ((dat = fgetc(infile)) != EOF)
